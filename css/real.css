@@ -1,0 +1,595 @@
+/*var*/
+:root {
+  --main-color: #ffcc01;
+  --secondary: #1f373d;
+  --section-padding: 50px;
+  --para-color: #777;
+}
+/*var*/
+/*start global rules*/
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+::-webkit-scrollbar-track {
+  background-color: var(--para-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color:var(--main-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    bac;
+}
+
+ul {
+  list-style: none;
+}
+/*container*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*small*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*midum*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*larg*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+/*end global rules*/
+/*start commenes*/
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+.main-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.main-heading + p {
+  width: 400px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+/*end commenes*/
+/*----------------starat-------------*/
+.header {
+  padding: 20px 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo img {
+  width: 100px;
+}
+.header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header nav ul {
+  display: flex;
+  margin-right: 40px;
+}
+.header nav ul li a {
+  display: flex;
+  padding: 0 10px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+.header .join {
+  display: flex;
+}
+.header .join p {
+  margin-right: 27px;
+  font-size: 14px;
+  margin-top: 4px;
+  margin: 11px 27px 0 0;
+}
+.header .join button {
+  background: var(--main-color);
+  color: var(--secondary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+/*--------------------end header-----------------*/
+.leanding {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/leanding.jpg);
+  background-size: cover;
+  width: 80%;
+  float: right;
+}
+
+.leanding h1 {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: -160px;
+  color: var(--secondary);
+  font-size: 50px;
+}
+.leanding form {
+  position: absolute;
+  top: 45%;
+  left: -135px;
+}
+.leanding input[type="text"] {
+  border: none;
+  height: 50px;
+  padding: 10px 10px 10px 50px;
+  color: var(--para-color);
+}
+.leanding input[type="search"] {
+  height: 50px;
+  border: none;
+  margin: -4px;
+  background: var(--main-color);
+  width: 20%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--secondary);
+}
+.leanding .search-i {
+  position: absolute;
+  left: -124px;
+  top: 300px;
+  color: var(--para-color);
+}
+.leanding .adress {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 50%;
+  background: var(--main-color);
+  height: 4rem;
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary);
+  font-weight: 600;
+}
+.leanding .adress .info {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.leanding .adress .info .add-i {
+  margin-right: 15px;
+  color: #fff;
+}
+/*--------------------end leanding---------------------*/
+/*--------------------start about-----------------------*/
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.about .container {
+  display: flex;
+  align-items: center;
+}
+.about .info {
+  width: 50%;
+}
+.about .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+}
+.about .boxes .box {
+  flex-basis: 30%;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  background: #f6f6f6;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.about .boxes .box span {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 5px;
+  color: var(--main-color);
+}
+.about .boxes .box p {
+  font-size: 11px;
+  text-transform: capitalize;
+}
+.about .info h2 {
+  margin-bottom: 30px;
+  line-height: 1.4;
+  color: var(--secondary);
+}
+.about .info p {
+  color: var(--para-color);
+  line-height: 1.4;
+}
+/*----------------------end about---------------------*/
+/*----------------------start aparment------------------*/
+.aparments {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #e0e0e0;
+}
+.aparments .apar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aparments h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.aparments .apar-container .box {
+  flex-basis: 31%;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.aparments .apar-container .box img {
+  max-width: 100%;
+}
+.aparments .box .info {
+  padding: 20px;
+}
+.aparments .box .info address {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.aparments .box .info .icone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aparments .box .info .icone .price {
+  font-weight: 600;
+  color: var(--main-color);
+}
+.aparments .box .info .icone .apa-i {
+  font-size: 14px;
+  color: var(--secondary);
+  margin-right: 3px;
+}
+.aparments .box .info .inf span:first-of-type {
+  margin-right: 10px;
+}
+.aparments .box .info .inf span {
+  font-size: 13px;
+  color: var(--para-color);
+  position: relative;
+  top: -3px;
+}
+.aparments form {
+}
+.aparments input[type="text"] {
+  border: none;
+  height: 50px;
+  padding: 10px 10px 10px 50px;
+  color: var(--para-color);
+}
+.aparments input[type="search"] {
+  height: 50px;
+  border: none;
+  margin: -4px;
+  background: var(--main-color);
+  width: 20%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--secondary);
+}
+.aparments .search {
+  position: relative;
+}
+.aparments .search-i {
+  color: var(--para-color);
+  position: absolute;
+  top: 18px;
+  margin-left: 22px;
+}
+.aparments .search button {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+}
+/*-----------------------------------how it work-------------*/
+.how {
+  padding-top: var(--section-padding);
+  padding: var(--section-padding);
+  background-color: var(--para-color);
+}
+.how .how-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.how .how-cont .box {
+  flex-basis: 31%;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.how .how-cont .box:hover,
+.how .how-cont .box.activ {
+  background-color: var(--main-color);
+  color: white;
+}
+.how .how-cont .active {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.how .how-cont .box .num {
+  font-family: "Montserrat", sans-serif;
+  font-size: 109px;
+  font-weight: bolder;
+  position: relative;
+  top: -50px;
+  left: -22px;
+}
+.how .how-cont .box .info {
+  margin-top: -40px;
+  margin-bottom: 28px;
+}
+.how .how-cont .box .info h3 {
+  padding: 20px;
+  color: var(--secondary);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.how .how-cont .box .info p {
+  padding: 0 30px 16px;
+  line-height: 1.6;
+  color: var(--para-color);
+  font-size: 14px;
+}
+.how .how-cont .box .info a {
+  padding: 0 30px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--secondary);
+  font-size: 15px;
+}
+/*-----------------------services-----------*/
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.srv-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.srv-container .image {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.srv-container .image img {
+  max-width: 100%;
+  height: 100%;
+}
+.srv-container .srv-info {
+  flex-basis: 40%;
+  max-width: 40%;
+}
+.srv-container .srv-info h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.srv-container .srv-info p {
+  width: 80%;
+  line-height: 1.6;
+  padding: 15px 0 50px;
+}
+/*-----------------------end services--------------*/
+/*----------------------- start agent--------------*/
+.agent {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--para-color);
+}
+.agent .agend-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.agent .agend-cont .box {
+  flex-basis: 32%;
+  max-width: 32.33333%;
+  background: #fff;
+}
+.agent .agend-cont .box img {
+  max-width: 100%;
+}
+.agent .box .agent-info {
+  padding: 20px;
+}
+.agent .box .agent-info > p {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.agent .box .agent-info .agent-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.agent-detail p {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--main-color);
+}
+.agent .box .agent-info .agent-social i:nth-child(2) {
+  margin: 0 20px;
+}
+/*--------------------------end agent---------------*/
+/*--------------------------start add---------------*/
+.add {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+}
+.add-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-cont .image {
+  flex: 0 0 50%;
+}
+.add-cont img {
+  max-width: 100%;
+}
+.add-cont .image .loca {
+  width: 50%;
+  background: var(--main-color);
+  padding: 20px 25px;
+  position: relative;
+  top: -30px;
+  display: flex;
+}
+.add-cont .image .loca i {
+  margin-right: 10px;
+  color: #fff;
+}
+.add-cont .image .loca p {
+  font-size: 15px;
+  font-weight: 600;
+}
+.add-cont .add-info {
+  flex: 0 0 40%;
+}
+.add-cont .add-info h2 {
+  font-weight: 600;
+  padding: 0 0 20px;
+  font-size: 20px;
+}
+.add-cont .add-info p {
+  font-size: 15px;
+  color: var(--para-color);
+  line-height: 1.6;
+}
+.add-cont .add-info button {
+  margin-top: 20px;
+  border: none;
+  background: var(--secondary);
+  color: #fff;
+  padding: 20px 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+/*--------------------------end add---------------*/
+/*--------------------------start contact---------------*/
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--secondary);
+}
+.contact .top-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.top-con p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.top-con input {
+  padding: 15px 100px 15px 10px;
+  width: 40%;
+}
+.contact hr {
+  border-color: var(--para-color);
+}
+.contact .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.bottom .left-con {
+  margin-right: 120px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.bottom .left-con p:first-of-type {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.bottom .left-con p:last-of-type {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.bottom .right-con {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+.bottom .right-con h4 {
+  font-size: 14px;
+  color: var(--para-color);
+  padding-bottom: 20px;
+}
+
+.bottom .right-con p {
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 10px;
+}
