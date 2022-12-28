@@ -170,12 +170,12 @@ ul {
   padding: 10px 10px 10px 50px;
   color: var(--para-color);
 }
-.leanding input[type="search"] {
+.leanding input[type="submit"] {
   height: 50px;
   border: none;
   margin: -4px;
   background: var(--main-color);
-  width: 20%;
+  width: 100px;
   text-align: center;
   font-weight: 600;
   color: var(--secondary);
@@ -231,6 +231,12 @@ ul {
   }
   .leanding h1{
     font-size: 30px;
+  }
+  .leanding input[type="text"]{
+    width: 200px;
+  }
+  .leanding input[type="submit"]{
+    width: 80px;
   }
   .leanding .search-i{
     left: -40px;
@@ -325,6 +331,7 @@ ul {
   margin-bottom: 30px;
 }
 .aparments .apar-container .box img {
+  width: 100%;
   max-width: 100%;
 }
 .aparments .box .info {
@@ -386,6 +393,7 @@ ul {
   position: absolute;
   top: 18px;
   margin-left: 22px;
+  left: 0;
 }
 .aparments .search button {
   padding: 15px 20px;
@@ -394,17 +402,15 @@ ul {
   background: #fff;
 }
 @media (max-width: 676px) {
-  .aparments input{
-    width: 180px;
+  .aparments .search{
+    flex-direction: column;
   }
   .aparments #submit{
     width: 60px;
   }
-  .aparments .search-i{
-    top: 18px;
-  }
   .aparments .search button{
     white-space: nowrap;
+    order: -1;
   }
 }
 /*-----------------------------------how it work-------------*/
@@ -682,11 +688,6 @@ ul {
   color: #fff;
   text-transform: capitalize;
 }
-@media (max-width: 676px) {
-  .bottom .left-con{
-    display: none;
-  }
-}
 .bottom .left-con p:first-of-type {
   font-weight: 600;
   font-size: 20px;
@@ -713,4 +714,12 @@ ul {
   font-size: 12px;
   color: #fff;
   padding-bottom: 10px;
+}
+@media (max-width: 676px) {
+  .top-con input{
+    padding: 15px;
+  }
+  .bottom .left-con{
+    display: none;
+  }
 }
