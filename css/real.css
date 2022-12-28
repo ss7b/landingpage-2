@@ -365,7 +365,9 @@ ul {
   position: relative;
   top: -3px;
 }
-
+.aparments .search  form{
+   position: relative;
+}
 .aparments input[type="text"] {
   border: none;
   height: 50px;
